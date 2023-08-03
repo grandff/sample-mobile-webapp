@@ -9,6 +9,38 @@ yarn create next-app --tailwind sample-mobile-webapp
 
 yarn dev
 
+## 생활코딩 강의 기준으로 진행함
+
+[X] 샘플앱세탁
+
+- layout.js에서 layout 기본 설정
+
+[ ] 빌드와 배포
+
+[ ] 뼈대 만들기
+
+[ ] Single Page Application
+
+[ ] 정적 자원 사용
+
+[ ] CSS
+
+[ ] backend
+
+[ ] 글 목록 가져오기
+
+[ ] 읽기 기능 구현
+
+[ ] 생성 기능 구현
+
+[ ] udpate, delete 보이기
+
+[ ] 수정 기능
+
+[ ] 삭제 기능
+
+[ ] 환경변수
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
