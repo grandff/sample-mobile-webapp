@@ -1,3 +1,14 @@
+# Sample Mobile Web App With Next.js 13
+
+## 개요
+
+nextjs 13버전 복습 겸 모바일웹앱 샘플 (날씨앱)
+yarn create next-app --tailwind sample-mobile-webapp
+
+## 실행법
+
+yarn dev
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
