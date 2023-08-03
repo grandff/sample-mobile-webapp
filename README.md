@@ -15,7 +15,11 @@ yarn dev
 
 - layout.js에서 layout 기본 설정
 
-[ ] 빌드와 배포
+[X] 빌드와 배포
+
+- 빌드 시 yarn build 실행
+- 실행 시 yarn start 실행
+- .next폴더가 실제 서비스에 올라갈 때 쓰는 폴더임
 
 [ ] 뼈대 만들기
 
