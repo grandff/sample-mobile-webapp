@@ -21,9 +21,19 @@ yarn dev
 - 실행 시 yarn start 실행
 - .next폴더가 실제 서비스에 올라갈 때 쓰는 폴더임
 
-[ ] 뼈대 만들기
+[X] 뼈대 만들기
 
 - 공통 영역을 layout에 생성
+
+[X] Routing
+
+- layout.js에 추가해놓은 /create 경로에 맞게 src/app/create 폴더 생성
+- 그 하위에 page.js / layout.js 생성
+- 최초에 생성된것과 동일하게 page, layout 두개다 있으면 됨
+
+- 상세보기 기능 같은 경우 파라미터에 따라 다르게 데이터를 보여줘야하므로 다이나믹 라우팅 기능이 필요함
+- 라우팅 경로 하단에 []를 붙이면 동적으로 라우팅 경로를 설정할 수 있음
+- id를 확인하려면 props.param을 통해 확인 가능
 
 [ ] Single Page Application
 
@@ -48,6 +58,8 @@ yarn dev
 [ ] 환경변수
 
 ---
+
+[ ] 에셋 설정
 
 [ ] API 연결
 
