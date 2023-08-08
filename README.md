@@ -66,7 +66,33 @@ fetch('http://localhost:9999/movies')
   .then((data) => console.log(data));
 ```
 
-[ ] 글 목록 가져오기
+[X] 글 목록 가져오기
+
+- server component , client component 가 분리되어있음 (react 개념을 그대로 가져옴)
+- 만약 layout.js에 아래와 같이 작성하면 Client Component에서만 동작한다고 오류가 발생함
+
+```js
+// src/app/layout.js
+const [topics, setTopics] = useState([]);
+// 데이터 조회
+useEffect(() => {
+fetch('http://localhost:9999/topics')
+    .then((res) => res.json())
+    .then((data) => setTopics(data));
+});
+```
+
+- 위 오류를 해결하고 싶으면 소스 최상단에 "use client" 추가
+- 근데 이렇게 하면 Client Component가 됐기 때문에 Server Component 기능을 사용할 수 없어서 오류가 발생함
+- 해당 부분 제거해주면 됨(여기서는 meta)
+
+- 만약 위처럼 설정을 안바꾸고 사용하려면 (SSR 을 하려면) useState 이런걸 쓰는게 아니라 fetch만 가지고 처리해야함
+
+```js
+// function과 default 사이에 async 추가
+const resp = await fetch('http://localhost:9999/topics');
+const topics = await resp.json();
+```
 
 [ ] 읽기 기능 구현
 
@@ -81,6 +107,8 @@ fetch('http://localhost:9999/movies')
 [ ] 환경변수
 
 ---
+
+[ ] 기본 디자인 설정
 
 [ ] 에셋 설정
 
@@ -97,3 +125,5 @@ fetch('http://localhost:9999/movies')
 ## 디자인 참고
 
 <https://dribbble.com/shots/19339947-Mobile-App-for-Movies>
+
+<https://flowbite.com/docs/components/bottom-navigation/>
