@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import './globals.css'
 import Image from 'next/image'
-import BottomBar from './common/MobileNavBar';
+import BottomBar from "./common/mobileNavBar";
 
 export const metadata = {
   title: 'Web tutorilas',
