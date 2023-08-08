@@ -35,9 +35,13 @@ yarn dev
 - 라우팅 경로 하단에 []를 붙이면 동적으로 라우팅 경로를 설정할 수 있음
 - id를 확인하려면 props.param을 통해 확인 가능
 
-[ ] Single Page Application
+[X] Single Page Application
 
-[ ] 정적 자원 사용
+- spa를 구현하기 위해서 a 태그가 아닌 link로 수정하기
+
+[X] 정적 자원 사용
+
+- public 에 위치
 
 [ ] CSS
 

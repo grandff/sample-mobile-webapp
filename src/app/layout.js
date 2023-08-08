@@ -1,4 +1,6 @@
+import Link from 'next/link'
 import './globals.css'
+import Image from 'next/image'
 
 export const metadata = {
   title: 'Web tutorilas',
@@ -11,25 +13,26 @@ export default function RootLayout({ children }) {
       <body>        
       <header className="text-gray-600 body-font">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">            
+            <Link href="/" className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">            
+            <Image src="/images/snapchat.png" alt="logo" width={36} height={36}/>
             <span className="ml-3 text-xl">MDB</span>
-          </a>
+          </Link>
           <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a className="mr-5 hover:text-gray-900">Home</a>
-            <a className="mr-5 hover:text-gray-900">About</a>
-            <a className="mr-5 hover:text-gray-900">Search</a>
+            <Link href="/" className="mr-5 hover:text-gray-900">Home</Link>
+            <Link href="/" className="mr-5 hover:text-gray-900">About</Link>
+            <Link href="/" className="mr-5 hover:text-gray-900">Search</Link>
           </nav>          
         </div>
         </header>
         <div className="container mx-auto">
         <ol>
-          <li><a href="/read/1">html</a></li>
-          <li><a href="/read/2">css</a></li>
+          <li><Link href="/read/1">html</Link></li>
+          <li><Link href="/read/2">css</Link></li>
         </ol>
         {children}
         <ul>
-          <li><a href="/create">create</a></li>
-          <li><a href="/update/1">update</a></li>
+          <li><Link href="/create">create</Link></li>
+          <li><Link href="/update/1">update</Link></li>
           <li><input type="button" value="delete"/></li>
         </ul>  
         </div>        
