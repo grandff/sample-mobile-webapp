@@ -43,9 +43,28 @@ yarn dev
 
 - public 에 위치
 
-[ ] CSS
+[X] CSS
 
-[ ] backend
+- app/layout.js 는 가장 기본이 되는 레이아웃이기 때문에 전역정보라고 보면 됨
+
+[X] backend
+
+- route handler 쪽을 참고하면 next.js로 api 서버를 구축할 수 있음
+- json 서버를 통해 샘플 서버 구축
+
+```bash
+npx json-server --port 9999 --watch db.json
+```
+
+- 9999 포트로 접근이 가능함
+- 데이터를 변경하려면 db.json 파일을 수정하면 됨
+- fetch를 통해 데이터 조회 가능
+
+```js
+fetch('http://localhost:9999/movies')
+  .then((res) => res.json())
+  .then((data) => console.log(data));
+```
 
 [ ] 글 목록 가져오기
 
@@ -74,3 +93,7 @@ yarn dev
 [ ] movies 화면 생성
 
 [ ] about 화면 생성
+
+## 디자인 참고
+
+<https://dribbble.com/shots/19339947-Mobile-App-for-Movies>
