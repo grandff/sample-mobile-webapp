@@ -4,7 +4,8 @@ export default async function OpenTutorials() {
     // 데이터 조회    
     let topics;
     try {
-        const resp = await fetch('http://localhost:9999/topics');    
+        // cache 미사용
+        const resp = await fetch('http://localhost:9999/topics', { cache: "no-cache"});
         topics = await resp.json();
     } catch (e) {
         topics = [
@@ -19,12 +20,9 @@ export default async function OpenTutorials() {
             
         <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">This is OpenTutorials Practice List</h2>
         <ul className="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
-            <li>
-                <Link href="/read/1">html(SPA + Dynamic View)</Link>
-            </li>
-            <li>
-                <Link href="/read/2">css(SPA + Dynamic View)</Link>
-            </li>
+            {topics.map(topic=>{
+                return <li key={topic.id}><Link href={`/read/${topic.id}`}>{topic.title}</Link></li>
+            })}                    
             <li><Link href="/create">create(SPA)</Link></li>
             <li><Link href="/update/1">update</Link></li>
             <li><input type="button" value="delete"/></li>            
