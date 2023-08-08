@@ -2,8 +2,17 @@ import Link from "next/link";
 
 export default async function OpenTutorials() {    
     // 데이터 조회    
-    const resp = await fetch('http://localhost:9999/topics');
-    const topics = await resp.json();
+    let topics;
+    try {
+        const resp = await fetch('http://localhost:9999/topics');    
+        topics = await resp.json();
+    } catch (e) {
+        topics = [
+            { "id": 1, "title": "html", "body": "html is ..." },
+            { "id": 2, "title": "css", "body": "css is ..." }
+        ];
+    }
+    
 
     return (
         <>

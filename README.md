@@ -94,7 +94,9 @@ const resp = await fetch('http://localhost:9999/topics');
 const topics = await resp.json();
 ```
 
-[ ] 읽기 기능 구현
+[X] 읽기 기능 구현
+
+- read/[id] 에 fetch 추가
 
 [ ] 생성 기능 구현
 
