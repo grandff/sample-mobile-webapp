@@ -1,15 +1,82 @@
-# Sample Mobile Web App With Next.js 13
+# Sample Mobile Web App With Next.js 13 📄
 
-## 개요
+Android Kotlin, iOS Swift Web Mobile App에 들어갈 샘플 웹뷰다. 배포는 vercel을 통해 배포한다.
 
-nextjs 13버전 복습 겸 모바일웹앱 샘플 (날씨앱)
+이 웹의 주요 기능은 API 통신을 통한 유튜브 검색 기능이고, 오픈튜토리얼스의 학습 내용도 포함하고 있다.
+
+CRUD 기능은 Sqlite를 사용해서 처리한다.
+
+## 🔥 Features
+
+- [ ] 기본 홈 화면
+- [ ] 기본 디자인 설정
+- [ ] 에셋 설정
+- [ ] Trending Youtube List Page Add (제일 가운데)
+- [ ] Search Videos/channels Page Add
+- [ ] Open Tutorials Page Add
+- [ ] Basic CRUD Page (LocalStorage 사용)
+- [ ] SQLITE ??? 가능하긴함?
+
+## 🚀 Project Structure
+
+```bash
+/
+├── public/
+│   ├── images/
+│   │   └── logo.svg
+│   └── next.svg
+│   └── vercel.svg
+├── src/
+│   ├── app/
+│   │   └── socialIcons.ts
+│   ├── components/
+│   ├── content/
+│   │   |  blog/
+│   │   |    └── some-blog-posts.md
+│   │   └── _schemas.ts
+│   │   └── config.ts
+│   ├── layouts/
+│   └── pages/
+│   └── styles/
+│   └── utils/
+│   └── config.ts
+│   └── types.ts
+└── package.json
+```
+
+## 📖 디자인 참고
+
+![참고자료](https://dribbble.com/shots/19339947-Mobile-App-for-Movies)
+![tailwind refrence](https://flowbite.com/docs/components/bottom-navigation/)
+
+## 💻 Tech Stack
+
+**Main Framework** - [Astro](https://astro.build/)  
+**Type Checking** - [TypeScript](https://www.typescriptlang.org/)  
+**Component Framework** - [ReactJS](https://reactjs.org/)  
+**Styling** - [TailwindCSS](https://tailwindcss.com/)  
+**UI/UX** - [Figma](https://figma.com)  
+**Fuzzy Search** - [FuseJS](https://fusejs.io/)  
+**Icons** - [Boxicons](https://boxicons.com/) | [Tablers](https://tabler-icons.io/)  
+**Code Formatting** - [Prettier](https://prettier.io/)  
+**Deployment** - [Cloudflare Pages](https://pages.cloudflare.com/)  
+**Illustration in About Page** - [https://freesvgillustration.com](https://freesvgillustration.com/)  
+**Linting** - [ESLint](https://eslint.org)
+
+## 👨🏻‍💻 Running Locally
+
+```bash
+# create
 yarn create next-app --tailwind sample-mobile-webapp
 
-## 실행법
-
+# run dev
 yarn dev
 
-## 생활코딩 강의 기준으로 진행함 + 추가 진행사항 들
+# install prettier
+yarn add prettier
+```
+
+## ✨ 생활코딩 강의 기준으로 진행함
 
 [X] 샘플앱세탁
 
@@ -98,7 +165,11 @@ const topics = await resp.json();
 
 - read/[id] 에 fetch 추가
 
-[ ] 생성 기능 구현
+[X] 생성 기능 구현
+
+- Create에 생성 기능 추가
+- form의 onSubmit은 client 기능이기 때문에 "use client"을 선언해줘야함
+- 등록 완료 후 해당 상세 페이지로 이동
 
 [ ] udpate, delete 보이기
 
@@ -108,24 +179,10 @@ const topics = await resp.json();
 
 [ ] 환경변수
 
+## 📜 License
+
+Licensed under the MIT License, Copyright © 2023
+
 ---
 
-[ ] 기본 디자인 설정
-
-[ ] 에셋 설정
-
-[ ] API 연결
-
-[ ] 화면 디자인
-
-[ ] 홈 화면 생성
-
-[ ] movies 화면 생성
-
-[ ] about 화면 생성
-
-## 디자인 참고
-
-<https://dribbble.com/shots/19339947-Mobile-App-for-Movies>
-
-<https://flowbite.com/docs/components/bottom-navigation/>
+Made by ME 👨🏻‍💻
