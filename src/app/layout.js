@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {  
   return (
     <html>      
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       <body>                
         <div className="container mx-auto bg-black text-white h-screen">
           <header className="text-gray-600 body-font">
