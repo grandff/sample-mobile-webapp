@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "node connect.js && next dev",
-    "build": "node connect.js && next build",
-    "start": "node connect.js && next start",
+    "build": "next build",
+    "start": "next start",
     "lint": "next lint",
     "format": "prettier --check --ignore-path .gitignore .",
     "format:fix": "prettier --write --ignore-path .gitignore ."

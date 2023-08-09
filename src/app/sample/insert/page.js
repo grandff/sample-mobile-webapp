@@ -13,36 +13,40 @@ export default function SampleCreate() {
                 console.log(event.target);
                 const ttl = document.querySelector("input[id=ttl]").value;
                 console.log(ttl);
-                    if (ttl == "") { alert("Plz input title"); return false; }
-                    const ctt = event.target.ctt.value;
-                    if (ctt == "") { alert("Plz input ctt"); return false; }
-                    const uuid = event.target.uuid.value;
-                   //if (uuid == "") { alert("Plz input uuid"); return false; }
-                
-
-                    const options = {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify({ ttl, ctt, uuid })
-                    };
-                    try {
-                        fetch(`https://sample-mobile-webapp.vercel.app/api/sample`, options)
-                            .then((res) => res.json())
-                            .then((data) => {
-                                console.log(data);
-                                if (data.id != 0) {
-                                    router.push(`/sample/detail/${data.id}`);                            
-                                    router.refresh();
-                                } else {
-                                    alert("등록에 실패했습니다. 잠시 후에 다시 시도해주세요.");
-                                }
-                            });                                            
-                    } catch (e) {
-                        console.error(e);
-                        alert("등록에 실패했습니다. 잠시 후에 다시 시도해주세요.");
-                    }                               
+                if (ttl == "") { alert("Plz input title"); return false; }
+                const ctt = event.target.ctt.value;
+                if (ctt == "") { alert("Plz input ctt"); return false; }
+                const uuid = event.target.uuid.value;
+                //if (uuid == "") { alert("Plz input uuid"); return false; }
+            
+                if(confirm("테스트 확인용입니다. 확인 누를 경우 이전화면으로 갑니다요.")){
+                    router.push(`/sample`);
+                    router.refresh();
+                }
+            
+                    // const options = {
+                    //     method: 'POST',
+                    //     headers: {
+                    //         'Content-Type': 'application/json'
+                    //     },
+                    //     body: JSON.stringify({ ttl, ctt, uuid })
+                    // };
+                    // try {
+                    //     fetch(`https://sample-mobile-webapp.vercel.app/api/sample`, options)
+                    //         .then((res) => res.json())
+                    //         .then((data) => {
+                    //             console.log(data);
+                    //             if (data.id != 0) {
+                    //                 router.push(`/sample/detail/${data.id}`);                            
+                    //                 router.refresh();
+                    //             } else {
+                    //                 alert("등록에 실패했습니다. 잠시 후에 다시 시도해주세요.");
+                    //             }
+                    //         });                                            
+                    // } catch (e) {
+                    //     console.error(e);
+                    //     alert("등록에 실패했습니다. 잠시 후에 다시 시도해주세요.");
+                    // }                               
             }}>
             <div className="mb-6">
                 <label htmlFor="email" className="block mb-2 text-sm font-medium  text-white">Title</label>
