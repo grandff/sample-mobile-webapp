@@ -46,8 +46,9 @@ export default function Update() {
                                 router.push(`/read/${lastid}`);                            
                                 router.refresh();
                             });                                            
-                    } catch (e) {
-                        
+                    } catch (e) {                        
+                        router.push(`/read/1`);                            
+                        router.refresh();
                     }
             }}>
             <div className="mb-6">

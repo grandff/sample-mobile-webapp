@@ -176,12 +176,14 @@ const topics = await resp.json();
 - update, delete가 필요한 경우에만 보이게 처리
 - params를 받게 하기 위해 버튼만 따로 빼고 useParams사용 (client component화 해야함)
 
-[ ] 수정 기능
+[X] 수정 기능
 
 - 데이터 수정 기능 추가
 - 수정 완료 후 상세 페이지로 이동했을 떄 캐시 때문에 변경된 내용이 안보이므로 처리가 필요함
 
-[ ] 삭제 기능
+[X] 삭제 기능
+
+- 삭제 기능 구현
 
 [ ] 환경변수
 
