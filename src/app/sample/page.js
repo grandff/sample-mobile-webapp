@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default async function List() {
     // 데이터 조회
-    const resp = await fetch(process.env.SELF_URL + "/api/sample", { cache: "no-cache" });
+    const resp = await fetch("http://127.0.0.1:3000/api/sample", { cache: "no-cache" });
     const samples = await resp.json();
     return (
         <div className="relative overflow-x-auto mx-5">
