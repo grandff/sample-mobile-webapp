@@ -19,7 +19,8 @@ db.serialize(() => {
     `CREATE TABLE IF NOT EXISTS sample (
         id INTEGER PRIMARY KEY,
         ttl TEXT,
-        ctt TEXT
+        ctt TEXT,
+        uuid TEXT
       )`,
     (err) => {
       if (err) {
