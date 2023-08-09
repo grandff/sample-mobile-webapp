@@ -171,7 +171,10 @@ const topics = await resp.json();
 - form의 onSubmit은 client 기능이기 때문에 "use client"을 선언해줘야함
 - 등록 완료 후 해당 상세 페이지로 이동
 
-[ ] udpate, delete 보이기
+[X] udpate, delete 보이기
+
+- update, delete가 필요한 경우에만 보이게 처리
+- params를 받게 하기 위해 버튼만 따로 빼고 useParams사용 (client component화 해야함)
 
 [ ] 수정 기능
 

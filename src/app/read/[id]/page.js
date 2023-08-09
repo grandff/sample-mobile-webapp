@@ -1,3 +1,5 @@
+import ControlBar from "@/app/create/components/controlBar";
+
 export default async function Read(props) {
     let topic;
     try {
@@ -14,6 +16,7 @@ export default async function Read(props) {
             <p>this is your id {props.params.id}</p>
             <h2>{topic.title}</h2>
             <p>{topic.body}</p>
+            <ControlBar />
         </>
     )
 }
