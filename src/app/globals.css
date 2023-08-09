@@ -3,5 +3,5 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-body {font-size:16px;}
-input,select{font-size:100%}
+body {font-size:16px !important;}
+input,select{font-size:100% !important;}
