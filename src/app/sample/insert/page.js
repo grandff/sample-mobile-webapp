@@ -28,7 +28,7 @@ export default function SampleCreate() {
                         body: JSON.stringify({ ttl, ctt, uuid })
                     };
                     try {
-                        fetch(`${process.env.NEXT_PUBLIC_SELF_URL}/api/sample`, options)
+                        fetch(`https://sample-mobile-webapp.vercel.app/api/sample`, options)
                             .then((res) => res.json())
                             .then((data) => {
                                 console.log(data);
