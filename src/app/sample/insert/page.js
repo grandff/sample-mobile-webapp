@@ -41,6 +41,7 @@ export default function SampleCreate() {
                             });                                            
                     } catch (e) {
                         console.error(e);
+                        alert("등록에 실패했습니다. 잠시 후에 다시 시도해주세요.");
                     }                               
             }}>
             <div className="mb-6">
