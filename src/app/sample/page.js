@@ -2,8 +2,16 @@ import Link from "next/link";
 
 export default async function List() {
     // 데이터 조회
-    const resp = await fetch("https://sample-mobile-webapp.vercel.app/api/sample", { cache: "no-cache" });
-    const samples = await resp.json();
+    let samples;
+    try {
+        const resp = await fetch("https://sample-mobile-webapp.vercel.app/api/sample", { cache: "no-cache" });
+        samples = await resp.json();    
+    } catch (e) {
+        samples = [
+            {"id" : 4, "ttl" : "test1", "ctt" : "123123"}
+        ];
+    }
+    
     return (
         <div className="relative overflow-x-auto mx-5">
             <table className="w-full text-sm text-left  text-gray-400">
