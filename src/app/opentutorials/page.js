@@ -6,7 +6,7 @@ export default async function OpenTutorials() {
     let topics;
     try {
         // cache 미사용
-        const resp = await fetch('http://localhost:9999/topics', { cache: "no-cache"});
+        const resp = await fetch(process.env.API_URL + '/topics', { cache: "no-cache"});
         topics = await resp.json();
     } catch (e) {
         topics = [
@@ -15,7 +15,6 @@ export default async function OpenTutorials() {
         ];
     }
     
-
     return (
         <>
             

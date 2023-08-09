@@ -18,7 +18,7 @@ export default function ControlBar() {
                 <button onClick={() => {
                     const options = { method: 'DELETE' };
                     try {
-                        fetch(`http://localhost:9999/topics/${id}`, options)
+                        fetch(`${process.env.NEXT_PUBLIC_API_URL}/topics/${id}`, options)
                             .then((res) => res.json())
                             .then((data) => {                                
                                 router.push(`/`);                            

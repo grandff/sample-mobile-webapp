@@ -51,17 +51,10 @@ CRUD 기능은 Sqlite를 사용해서 처리한다.
 
 ## 💻 Tech Stack
 
-**Main Framework** - [Astro](https://astro.build/)  
-**Type Checking** - [TypeScript](https://www.typescriptlang.org/)  
+**Main Framework** - [NextJs](https://nextjs.org/blog/next-13/)  
 **Component Framework** - [ReactJS](https://reactjs.org/)  
 **Styling** - [TailwindCSS](https://tailwindcss.com/)  
-**UI/UX** - [Figma](https://figma.com)  
-**Fuzzy Search** - [FuseJS](https://fusejs.io/)  
-**Icons** - [Boxicons](https://boxicons.com/) | [Tablers](https://tabler-icons.io/)  
-**Code Formatting** - [Prettier](https://prettier.io/)  
-**Deployment** - [Cloudflare Pages](https://pages.cloudflare.com/)  
-**Illustration in About Page** - [https://freesvgillustration.com](https://freesvgillustration.com/)  
-**Linting** - [ESLint](https://eslint.org)
+**Deployment** - [Vercel](https://vercel.com/)  
 
 ## 👨🏻‍💻 Running Locally
 
@@ -185,7 +178,13 @@ const topics = await resp.json();
 
 - 삭제 기능 구현
 
-[ ] 환경변수
+[X] 환경변수
+
+- 환경변수 사용법
+- .env.local 추가
+- process.env 로 처리
+- 환경변수는 server component에서만 사용 가능함
+- NEXT_PUBLIC_ 접두사를 붙여야 client component에서도 사용 가능함
 
 ## 📜 License
 
