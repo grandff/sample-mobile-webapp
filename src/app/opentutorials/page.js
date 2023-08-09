@@ -19,16 +19,16 @@ export default async function OpenTutorials() {
     return (
         <>
             
-        <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">This is OpenTutorials Practice List</h2>
-        <ul className="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+        <h2 className="mb-2 text-lg font-semibold  text-white">This is OpenTutorials Practice List</h2>
+        <ul className="max-w-md space-y-1 list-disc list-inside text-gray-400">
             {topics.map(topic=>{
                 return <li key={topic.id}><Link href={`/read/${topic.id}`}>{topic.title}</Link></li>
             })}                                
         </ul>
         <ControlBar />    
 
-        <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">This is Sample Backend Data List</h2>
-            <ul className="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+        <h2 className="mb-2 text-lg font-semibold  text-white">This is Sample Backend Data List</h2>
+            <ul className="max-w-md space-y-1  list-disc list-inside text-gray-400">
                 {
                     topics.map((topic) => {
                         return (

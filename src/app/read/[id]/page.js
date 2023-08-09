@@ -3,7 +3,7 @@ import ControlBar from "@/app/create/components/controlBar";
 export default async function Read(props) {
     let topic;
     try {
-        const resp = await fetch(`http://localhost:9999/topics/${props.params.id}`);    
+        const resp = await fetch(`http://localhost:9999/topics/${props.params.id}`, { cache: "no-cache" });    
         topic = await resp.json();
     } catch (e) {
         topic = { "id": 1, "title": "html", "body": "html is ..." };
