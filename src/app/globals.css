@@ -4,4 +4,4 @@
 @import 'tailwindcss/utilities';
 
 body {font-size:16px !important;}
-input,select{font-size:100% !important;}
+input,select, textarea{font-size:100% !important;}
