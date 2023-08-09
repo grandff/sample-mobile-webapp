@@ -8,14 +8,14 @@ CRUD 기능은 Sqlite를 사용해서 처리한다.
 
 ## 🔥 Features
 
-- [ ] 기본 홈 화면
+- [X] 기본 홈 화면
 - [ ] 기본 디자인 설정
-- [ ] 에셋 설정
+- [X] 에셋 설정
 - [ ] Trending Youtube List Page Add (제일 가운데)
 - [ ] Search Videos/channels Page Add
 - [ ] Open Tutorials Page Add
 - [ ] Basic CRUD Page (LocalStorage 사용)
-- [ ] SQLITE ??? 가능하긴함?
+- [ ] SQLITE
 
 ## 🚀 Project Structure
 
@@ -48,6 +48,11 @@ CRUD 기능은 Sqlite를 사용해서 처리한다.
 
 ![참고자료](https://dribbble.com/shots/19339947-Mobile-App-for-Movies)
 ![tailwind refrence](https://flowbite.com/docs/components/bottom-navigation/)
+
+## ⛺️ References
+
+![Sqlite 설정](https://javascript.plainenglish.io/using-sqlite-with-next-js-13-cfa270e1d7ba)
+![Router 설정](https://nextjs.org/docs/app/building-your-application/routing/route-handlers)
 
 ## 💻 Tech Stack
 
