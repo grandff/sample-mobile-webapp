@@ -34,6 +34,12 @@ export default function AppToWeb() {
         alert(message);
     }
 
+    function callFunctionFromNative() {
+        if (confirm("아프지마도토도토잠보")) {
+            alert("사외디캅");
+        }    
+    }
+
     return (
         <div className="px-5">
             <h2 className="mb-2 text-lg font-semibold  text-white">This is App And Web Functions</h2>
