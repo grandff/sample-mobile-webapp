@@ -1,18 +1,8 @@
 "use client";
 
-function callNativeCallBack(message) {
-    alert(message);
-}
+import Script from "next/script";
 
-function callSchemaCallBack(message) {
-    alert(message);
-}
 
-function callFunctionFromNative() {
-    if (confirm("아프지마도토도토잠보")) {
-        alert("사외디캅");
-    }    
-}
 
 export default function AppToWeb() {
     // js bridge test 1
@@ -44,6 +34,7 @@ export default function AppToWeb() {
 
     return (
         <div className="px-5">
+            <Script src="/scripts/public.js" />
             <h2 className="mb-2 text-lg font-semibold  text-white">This is App And Web Functions</h2>
             <ul className="max-w-md space-y-1  list-disc list-inside text-gray-400">
                 <li>
