@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node connect.js && next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node src/db/connect.js && next dev",
+    "build": "node src/db/connect.js && next build",
+    "start": "node src/db/connect.js && next start",
     "lint": "next lint",
     "format": "prettier --check --ignore-path .gitignore .",
     "format:fix": "prettier --write --ignore-path .gitignore ."

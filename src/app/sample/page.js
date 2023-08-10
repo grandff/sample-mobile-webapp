@@ -10,7 +10,7 @@ export default async function List() {
         samples = [
             {"id" : 4, "ttl" : "test1", "ctt" : "123123"}
         ];
-    }
+    }    
     
     return (
         <div className="relative overflow-x-auto mx-5">

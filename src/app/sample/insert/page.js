@@ -24,29 +24,29 @@ export default function SampleCreate() {
                     router.refresh();
                 }
             
-                    // const options = {
-                    //     method: 'POST',
-                    //     headers: {
-                    //         'Content-Type': 'application/json'
-                    //     },
-                    //     body: JSON.stringify({ ttl, ctt, uuid })
-                    // };
-                    // try {
-                    //     fetch(`https://sample-mobile-webapp.vercel.app/api/sample`, options)
-                    //         .then((res) => res.json())
-                    //         .then((data) => {
-                    //             console.log(data);
-                    //             if (data.id != 0) {
-                    //                 router.push(`/sample/detail/${data.id}`);                            
-                    //                 router.refresh();
-                    //             } else {
-                    //                 alert("등록에 실패했습니다. 잠시 후에 다시 시도해주세요.");
-                    //             }
-                    //         });                                            
-                    // } catch (e) {
-                    //     console.error(e);
-                    //     alert("등록에 실패했습니다. 잠시 후에 다시 시도해주세요.");
-                    // }                               
+                    //  const options = {
+                    //      method: 'POST',
+                    //      headers: {
+                    //          'Content-Type': 'application/json'
+                    //      },
+                    //      body: JSON.stringify({ ttl, ctt, uuid })
+                    //  };
+                    //  try {
+                    //      fetch(`https://sample-mobile-webapp.vercel.app/api/sample`, options)
+                    //          .then((res) => res.json())
+                    //          .then((data) => {
+                    //              console.log(data);
+                    //              if (data.id != 0) {
+                    //                  router.push(`/sample/detail/${data.id}`);                            
+                    //                  router.refresh();
+                    //              } else {
+                    //                  alert("등록에 실패했습니다. 잠시 후에 다시 시도해주세요.");
+                    //              }
+                    //          });                                            
+                    //  } catch (e) {
+                    //      console.error(e);
+                    //      alert("등록에 실패했습니다. 잠시 후에 다시 시도해주세요.");
+                    //  }                               
             }}>
             <div className="mb-6">
                 <label htmlFor="email" className="block mb-2 text-sm font-medium  text-white">Title</label>

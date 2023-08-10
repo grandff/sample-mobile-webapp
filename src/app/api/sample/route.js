@@ -10,7 +10,7 @@ export async function GET(request) {
   // db init check
   if (!db) {
       db = await open({
-        filename:  "./collection.db", // Specify the database file path        
+        filename:  "src/collection.db", // Specify the database file path        
         driver : Database,
       });
   }
@@ -29,7 +29,7 @@ export async function POST(request) {
 
     if (!db) {
         db = await open({
-            filename: "./collection.db", // Specify the database file path        
+            filename: "src/collection.db", // Specify the database file path        
             driver : Database,
         });
     }

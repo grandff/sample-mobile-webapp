@@ -15,7 +15,7 @@ CRUD 기능은 Sqlite를 사용해서 처리한다.
 - [ ] Search Videos/channels Page Add
 - [ ] Open Tutorials Page Add
 - [ ] Basic CRUD Page (LocalStorage 사용)
-- [ ] SQLITE
+- [X] SQLITE (로컬에서만 가능..)
 
 ## 🚀 Project Structure
 
