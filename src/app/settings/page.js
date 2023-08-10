@@ -1,5 +1,19 @@
 "use client";
 
+function callNativeCallBack(message) {
+    alert(message);
+}
+
+function callSchemaCallBack(message) {
+    alert(message);
+}
+
+function callFunctionFromNative() {
+    if (confirm("아프지마도토도토잠보")) {
+        alert("사외디캅");
+    }    
+}
+
 export default function AppToWeb() {
     // js bridge test 1
     function callNative01() {
@@ -26,19 +40,7 @@ export default function AppToWeb() {
         }
     }
 
-    function callNativeCallBack(message) {
-        alert(message);
-    }
-
-    function callSchemaCallBack(message) {
-        alert(message);
-    }
-
-    function callFunctionFromNative() {
-        if (confirm("아프지마도토도토잠보")) {
-            alert("사외디캅");
-        }    
-    }
+    
 
     return (
         <div className="px-5">
