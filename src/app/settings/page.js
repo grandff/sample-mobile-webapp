@@ -46,6 +46,14 @@ export default function AppToWeb() {
                 <li>
                     <button onClick={callNative03} type="button" className="text-white  focus:outline-none focus:ring-4  font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 bg-gray-800 hover:bg-gray-700 focus:ring-gray-700 border-gray-700">Schema JS Test </button>
                 </li>
+                <li>
+                    <button onClick={() => {
+                        window.open("http://m.naver.com");
+                    } } type="button" class=" border focus:outline-none focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 bg-gray-800 text-white border-gray-600 hover:bg-gray-700 hover:border-gray-600 focus:ring-gray-700">Window open</button>
+                </li>
+                <li>
+                    <button type="button" class="focus:outline-none text-white  focus:ring-4  font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 bg-green-600 hover:bg-green-700 focus:ring-green-800">Move Natvie Screen</button>
+                </li>
             </ul>
 
         </div>
