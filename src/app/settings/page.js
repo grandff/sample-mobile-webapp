@@ -30,7 +30,13 @@ export default function AppToWeb() {
         }
     }
 
-    
+    function goToNativePage() {
+        try {
+            window.webkit.messageHandlers.navigateToPage.postMessage("memoPage");;
+        } catch (e) {
+            alert(e);
+        }
+    }    
 
     return (
         <div className="px-5">
@@ -52,7 +58,7 @@ export default function AppToWeb() {
                     } } type="button" class=" border focus:outline-none focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 bg-gray-800 text-white border-gray-600 hover:bg-gray-700 hover:border-gray-600 focus:ring-gray-700">Window open</button>
                 </li>
                 <li>
-                    <button type="button" class="focus:outline-none text-white  focus:ring-4  font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 bg-green-600 hover:bg-green-700 focus:ring-green-800">Move Natvie Screen</button>
+                    <button onClick={goToNativePage} type="button" class="focus:outline-none text-white  focus:ring-4  font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 bg-green-600 hover:bg-green-700 focus:ring-green-800">Move Natvie Screen</button>
                 </li>
             </ul>
 

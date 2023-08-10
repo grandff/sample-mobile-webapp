@@ -53,13 +53,15 @@ CRUD 기능은 Sqlite를 사용해서 처리한다.
 
 ## 📖 디자인 참고
 
-![참고자료](https://dribbble.com/shots/19339947-Mobile-App-for-Movies)
-![tailwind refrence](https://flowbite.com/docs/components/bottom-navigation/)
+[참고자료](https://dribbble.com/shots/19339947-Mobile-App-for-Movies)
+
+[tailwind refrence](https://flowbite.com/docs/components/bottom-navigation/)
 
 ## ⛺️ References
 
-![Sqlite 설정](https://javascript.plainenglish.io/using-sqlite-with-next-js-13-cfa270e1d7ba)
-![Router 설정](https://nextjs.org/docs/app/building-your-application/routing/route-handlers)
+[Sqlite 설정](https://javascript.plainenglish.io/using-sqlite-with-next-js-13-cfa270e1d7ba)
+
+[Router 설정](https://nextjs.org/docs/app/building-your-application/routing/route-handlers)
 
 ## 💻 Tech Stack
 
@@ -81,7 +83,7 @@ yarn dev
 yarn add prettier
 ```
 
-## ✨ 생활코딩 강의 기준으로 진행함
+## ✨ 생활코딩 강의
 
 [X] 샘플앱세탁
 
