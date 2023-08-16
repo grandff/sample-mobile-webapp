@@ -13,3 +13,8 @@ function callFunctionFromNative() {
         alert("사외디캅");
     }    
 }
+
+function returnAppToken(token) {
+    const uuidInput = document.querySelector("#uuid");
+    uuidInput.value = token;
+}

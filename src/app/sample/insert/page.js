@@ -1,12 +1,23 @@
 "use client";
 import { useRouter } from "next/navigation"; 
+import Script from "next/script";
 
 export default function SampleCreate() {
 
     const router = useRouter(); // client 에서만 사용 가능
 
+    // js bridge test 1
+    function coreDataCall() {
+        try {
+            window.webkit.messageHandlers.coreDataCall.postMessage();
+        } catch (e) {
+            alert(e);
+        }
+    }
+
     return (
         <div className="px-5">
+            <Script src="/scripts/public.js" />
             <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight  md:text-5xl lg:text-6xl text-white">This is Sample Sqlite Create Form</h1>       
             <form onSubmit={async (event) => {
                 event.preventDefault(); // on submit 기본 동작 방지
@@ -43,7 +54,7 @@ export default function SampleCreate() {
                             </svg>
                         </div>
                         <input type="text" id="uuid" name="uuid" readOnly  className="block w-full p-4 pl-10 text-sm  border  rounded-lg  bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500" placeholder="Get UUID From App" required />
-                        <button  className="text-white absolute right-2.5 bottom-2.5  focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 bg-purple-600 hover:bg-purple-700 focus:ring-purple-800">Do it</button>
+                        <button onClick={coreDataCall} className="text-white absolute right-2.5 bottom-2.5  focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 bg-purple-600 hover:bg-purple-700 focus:ring-purple-800">Do it</button>
                     </div>
             </div>
                     
