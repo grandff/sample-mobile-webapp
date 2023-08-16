@@ -9,7 +9,7 @@ export default function SampleCreate() {
     // js bridge test 1
     function coreDataCall() {
         try {
-            window.webkit.messageHandlers.coreDataCall.postMessage();
+            window.webkit.messageHandlers.coreDataCall.postMessage("");
         } catch (e) {
             alert(e);
         }
